@@ -448,10 +448,10 @@ main {
 
 
 /*-----------------------------------*\
-  #NAVBAR
+  #mynavbar
 \*-----------------------------------*/
 
-.navbar {
+.mynavbar {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -464,7 +464,7 @@ main {
   z-index: 5;
 }
 
-.navbar-list {
+.mynavbar-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -472,14 +472,14 @@ main {
   padding: 0 10px;
 }
 
-.navbar-link {
+.mynavbar-link {
   color: var(--light-gray);
   font-size: var(--fs-8);
   padding: 20px 7px;
   transition: color var(--transition-1);
 }
 
-.navbar-link:hover, .active  {
+.mynavbar-link:hover, .active  {
   color: var(--green);
 }
 
@@ -950,6 +950,10 @@ main {
   animation: scaleUp 0.25s ease forwards;
 }
 
+.project-img:hover {
+  border: 1px solid var(--green);
+}
+
 @keyframes scaleUp {
   0% { transform: scale(0.5); }
   100% { transform: scale(1); }
@@ -1374,14 +1378,14 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * #NAVBAR
+   * #mynavbar
    */
 
-  .navbar { border-radius: 20px 20px 0 0; }
+  .mynavbar { border-radius: 20px 20px 0 0; }
 
-  .navbar-list { gap: 20px; }
+  .mynavbar-list { gap: 20px; }
 
-  .navbar-link { --fs-8: 14px; }
+  .mynavbar-link { --fs-8: 14px; }
 
 
 
@@ -1572,10 +1576,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * NAVBAR
+   * mynavbar
    */
 
-  .navbar-link { --fs-8: 15px; }
+  .mynavbar-link { --fs-8: 15px; }
 
 
 
@@ -1694,10 +1698,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * NAVBAR
+   * mynavbar
    */
 
-  .navbar {
+  .mynavbar {
     position: absolute;
     bottom: auto;
     top: 0;
@@ -1709,12 +1713,12 @@ textarea.form-input::-webkit-resizer { display: none; }
     box-shadow: none;
   }
 
-  .navbar-list {
+  .mynavbar-list {
     gap: 30px;
     padding: 0 20px;
   }
 
-  .navbar-link { font-weight: var(--fw-500); }
+  .mynavbar-link { font-weight: var(--fw-500); }
 
 
 

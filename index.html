@@ -181,27 +181,27 @@
         <div class="main-content">
 
             <!--
-                                - #NAVBAR
+                                - #mynavbar
                               -->
 
-            <nav class="navbar">
+            <nav class="mynavbar">
 
-                <ul class="navbar-list">
+                <ul class="mynavbar-list">
 
-                    <li class="navbar-item">
-                        <button class="navbar-link active" data-nav-link>About</button>
+                    <li class="mynavbar-item">
+                        <button class="mynavbar-link active" data-nav-link>About</button>
                     </li>
 
-                    <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link>Resume</button>
+                    <li class="mynavbar-item">
+                        <button class="mynavbar-link" data-nav-link>Resume</button>
                     </li>
 
-                    <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link>Portfolio</button>
+                    <li class="mynavbar-item">
+                        <button class="mynavbar-link" data-nav-link>Portfolio</button>
                     </li>
 
-                    <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link>Contact</button>
+                    <li class="mynavbar-item">
+                        <button class="mynavbar-link" data-nav-link>Contact</button>
                     </li>
 
                 </ul>
@@ -943,40 +943,15 @@
 
                     </div>
 
-                            <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Launch demo modal
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div>
+                    </div>
 
                     <ul class="project-list">
 
-                        <li class="project-item  active" data-filter-item data-category="web development">
+                        <li class="project-item active" data-filter-item data-category="web development"  data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <a href="#">
 
                                 <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
-
                                     <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
                                 </figure>
 
@@ -1150,6 +1125,64 @@
                         </li>
 
                     </ul>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="exampleModalLabel">Modal title</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <div id="carouselExampleCaptions" class="carousel slide carousel-fade carousel-dark" data-bs-ride="false">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                                                aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                                aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                                aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./assets/images/project-1.jpg" class="d-block w-100" alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>First slide label</h5>
+                                                    <p>Some representative placeholder content for the first slide.</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./assets/images/project-1.jpg" class="d-block w-100" alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Second slide label</h5>
+                                                    <p>Some representative placeholder content for the second slide.</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./assets/images/project-1.jpg" class="d-block w-100" alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Third slide label</h5>
+                                                    <p>Some representative placeholder content for the third slide.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </section>
 
